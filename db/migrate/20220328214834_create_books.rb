@@ -10,6 +10,7 @@ class CreateBooks < ActiveRecord::Migration[6.1]
       t.string :comment
       t.belongs_to :author
       t.belongs_to :genre
+      t.timestamps
     end
   end
 end

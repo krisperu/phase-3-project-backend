@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 2022_03_28_214841) do
     t.string "comment"
     t.integer "author_id"
     t.integer "genre_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.index ["author_id"], name: "index_books_on_author_id"
     t.index ["genre_id"], name: "index_books_on_genre_id"
   end
