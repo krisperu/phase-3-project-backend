@@ -15,3 +15,4 @@ use Rack::JSONBodyParser
 run ApplicationController
 use BooksController
 use AuthorsController
+use HomepageController
