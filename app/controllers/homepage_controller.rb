@@ -1,7 +1,7 @@
 class HomepageController < ApplicationController
 
     get '/' do
-        books = Book.all.limit(7)
+        books = Book.all.sample(7)
         books.to_json(
             only: [:image],
         )

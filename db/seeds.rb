@@ -1,15 +1,15 @@
 puts "🌱 Seeding authors..."
 
-Author.create(first_name: "Jane", last_name: "Austen")
-Author.create(first_name: "Lewis", last_name: "Carol")
-Author.create(first_name: "J.K.", last_name: "Rowling")
-Author.create(first_name: "Mark", last_name: "Sandborn")
-Author.create(first_name: "Sarah J", last_name: "Maas")
-Author.create(first_name: "J. R. R.", last_name: "Tolkien")
-Author.create(first_name: "F. Scott", last_name: "Fitzgerald")
-Author.create(first_name: "Fyodor", last_name: "Dostoevsky")
-Author.create(first_name: "Herman", last_name: "Melville")
-Author.create(first_name: "Mary", last_name: "Shelley")
+Author.create(name: "Jane Austen")
+Author.create(name: "Lewis Carol")
+Author.create(name: "J.K. Rowling")
+Author.create(name: "Mark Sandborn")
+Author.create(name: "Sarah J Maas")
+Author.create(name: "J. R. R. Tolkien")
+Author.create(name: "F. Scott Fitzgerald")
+Author.create(name: "Fyodor Dostoevsky")
+Author.create(name: "Herman Melville")
+Author.create(name: "Mary Shelley")
 
 puts "🌱 Seeding books..."
 
@@ -287,7 +287,7 @@ Book.create(
 )
 Book.create(
     title: "Frankenstein",
-    description: "So Melville wrote of his masterpiece, one of the greatest works of imagination in literary history. In part, Moby-Dick is the story of an eerily compelling madman pursuing an unholy war against a creature as vast and dangerous and unknowable as the sea itself. But more than just a novel of adventure, more than an encyclopaedia of whaling lore and legend, the book can be seen as part of its author's lifelong meditation on America. Written with wonderfully redemptive humour, Moby-Dick is also a profound inquiry into character, faith, and the nature of perception.", 
+    description: "Frankenstein; or, The Modern Prometheus is an 1818 novel written by English author Mary Shelley. Frankenstein tells the story of Victor Frankenstein, a young scientist who creates a sapient creature in an unorthodox scientific experiment. Shelley started writing the story when she was 18, and the first edition was published anonymously in London on 1 January 1818, when she was 20. Her name first appeared in the second edition, which was published in Paris in 1821.", 
     image: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982146160/frankenstein-9781982146160_hr.jpg", 
     length: 108,  
     reading_time: 2, 
