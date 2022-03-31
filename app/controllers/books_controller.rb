@@ -3,14 +3,14 @@ class BooksController < ApplicationController
     get '/books' do
         books = Book.all
         books.to_json(
-            only: [:id, :title, :image],
+            # only: [:id, :title, :image],
             include: [:author, :genre]
         )
     end
     
         get '/books/:id' do
         book = Book.find(params[:id])
-        book.to_json
+        book.to_json(include: [:author, :genre])
         end
 
     delete '/books/:id' do
