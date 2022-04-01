@@ -7,4 +7,9 @@ class AuthorsController < ApplicationController
                 { only: [:title, :image]}
             })
     end
+    delete '/books/:id' do
+        author = Author.find(params[:id])
+        author.destroy
+        author.to_json
+    end
 end

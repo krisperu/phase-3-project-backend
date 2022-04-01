@@ -3,7 +3,6 @@ class BooksController < ApplicationController
     get '/books' do
         books = Book.all
         books.to_json(
-            # only: [:id, :title, :image],
             include: [:author, :genre]
         )
     end
